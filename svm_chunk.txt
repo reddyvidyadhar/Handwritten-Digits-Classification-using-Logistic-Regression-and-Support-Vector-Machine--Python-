@@ -1,0 +1,198 @@
+print('\n\n--------------SVM-------------------\n\n')
+######################################################
+train_label = train_label.flatten()
+test_label = test_label.flatten()
+validation_label = validation_label.flatten()
+
+print('\n\n--------------linear; gamma =0.0-------------------\n\n')
+SVC_V = SVC(C=1.0, kernel='linear', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;gamma=1.0-------------------\n\n')
+SVC_V = SVC(kernel='rbf', gamma=1.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;gamma =0.0-------------------\n\n')
+SVC_V = SVC(C=1.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;gamma =0.0-------------------\n\n')
+SVC_V = SVC(C=1.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;gamma =1.0-------------------\n\n')
+SVC_V = SVC(C=1.0, kernel='rbf', gamma=1.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;C=10;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=10.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;C=20;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=20.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+print('\n\n--------------rbf;C=30;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=30.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+print('\n\n--------------rbf;C=40;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=40.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;C=50;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=50.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;C=60;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=60.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+print('\n\n--------------rbf;C=70;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=70.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;C=80;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=80.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;C=90;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=90.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+
+print('\n\n--------------rbf;C=100;gamma=0.0-------------------\n\n')
+SVC_V = SVC(C=100.0, kernel='rbf', gamma=0.0)
+SVC_V.fit(train_data , train_label)
+
+train_pred = SVC_V.predict(train_data)
+print('\n Training set Accuracy:' + str(100*np.mean((train_pred == train_label).astype(float))) + '%')
+
+test_pred = SVC_V.predict(test_data)
+print('\n Testing set Accuracy:' + str(100*np.mean((test_pred == test_label).astype(float))) + '%')
+
+validation_pred = SVC_V.predict(validation_data)
+print('\n Validation set Accuracy:' + str(100*np.mean((validation_pred == validation_label).astype(float))) + '%')
+########################################################################
